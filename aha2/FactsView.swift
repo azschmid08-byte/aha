@@ -19,7 +19,7 @@ struct ShareItem: Identifiable {
 @MainActor
 final class FactsViewModel: ObservableObject {
     @Published var facts: [Fact] = []
-    @Published var favoriteIDs: Set<String> = []
+    @Published var favoriteIDs: Set<String> = []  //test commit
     
     private let db = Firestore.firestore()
     
